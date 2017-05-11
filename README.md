@@ -1,4 +1,4 @@
-# Big Nerd Ranch Code Audit Template & HOWTO
+# Big Nerd Ranch Technical Audit Starting Point
 
 This repository contains:
 
