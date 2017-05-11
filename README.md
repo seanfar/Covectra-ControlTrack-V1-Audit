@@ -24,6 +24,9 @@ the content moved to this repo.
   and XeLaTeX to generate the final PDFs. If you don't have either, relax:
   Just run XXX to install them, and you'll be on your way in no time!
 
+  Not sure if you have everything installed?
+  Skip to the next step, and if it all works, you're golden!
+
 - **Run the toolchain on the blank template document.**
   This is a smoke test.
   All good? All good!
