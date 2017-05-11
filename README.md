@@ -16,7 +16,7 @@ the content moved to this repo.
 
 ## Getting Started
 
-- **Fork the repo to bignerdranch for your audit.**
+- **Fork the repo to the `bignerdranch` organization.**
   Say you're auditing version 3 of an iOS app named "I'm So Appy" for BigCorp.
   Then you might fork the repo to `bignerdranch/audit-ios-bigcorp-im-so-appy-v3`.
 
