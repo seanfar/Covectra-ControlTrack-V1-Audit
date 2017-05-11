@@ -1,6 +1,7 @@
 # Big Nerd Ranch Technical Audit Starting Point
 
-This repository contains:
+[This repository](https://github.com/bignerdranch/tech-audit-starting-point)
+contains:
 
 - An intro to doing code audits at BNR, including what they are and the various
   reasons we do them
