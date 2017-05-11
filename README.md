@@ -16,9 +16,20 @@ the content moved to this repo.
 
 ## Getting Started
 
-- **Fork the repo to the `bignerdranch` organization.**
+- **Create a new repo under the `bignerdranch` organization for your audit.**
   Say you're auditing version 3 of an iOS app named "I'm So Appy" for BigCorp.
   Then you might fork the repo to `bignerdranch/audit-ios-bigcorp-im-so-appy-v3`.
+
+- **Clone this repo, then aim the `origin` remote at your audit's repo.**
+  This'll look something like:
+
+  ```
+  AUDIT_DIR="audit-ios-bigcorp-im-so-appy-v3"
+  git clone git@github.com:bignerdranch/tech-audit-starting-point.git "$AUDIT_DIR"
+  cd "$AUDIT_DIR"
+  git remote set-url origin "git@github.com:bignerdranch/$AUDIT_DIR.git"
+  git push -u origin
+  ```
 
 - **Ensure you have the toolchain prereqs installed.**
   We use Pandoc to handle the Markdown (with interspersed LaTeX)
