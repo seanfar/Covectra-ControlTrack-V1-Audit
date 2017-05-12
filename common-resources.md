@@ -27,6 +27,7 @@ multiple audits.
 - [Beware Massive View Controller](http://www.objc.io/issues/13-architecture/)
 - [Naming guidelines for Obj-C](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html#//apple_ref/doc/uid/10000146-SW1)
     - Watch out especially for `getFoo` methods that are just accessors.
+- [Swift API Design Guidelines](https://swift.org/documentation/api-design-guidelines/)
 - [Write useful comments](https://www.bignerdranch.com/blog/considerate-commenting/)
 - [Probably you shouldn't call NSUserDefaults.synchronize()](https://developer.apple.com/library/prerelease/content/releasenotes/Foundation/RN-Foundation-v10.10/index.html#10_10UserDefaults)
 - [Avoiding Singleton Abuse](https://www.objc.io/issues/13-architecture/singletons/)
