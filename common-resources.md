@@ -36,7 +36,7 @@ multiple audits.
 ## Networking
 - [Don't use reachability to decide whether to try a request, only to decide whether to retry](https://github.com/tewha/AFNetworking/blob/docs/improve-reachability/README.md#network-reachability-manager)
     - [discussion](https://github.com/AFNetworking/AFNetworking/issues/2701#issuecomment-99965186)
-    - [further details](WWDC 2012 Session 706 (https://developer.apple.com/videos/play/wwdc2012/706/))
+    - further details: [WWDC 2012 Session 706](https://developer.apple.com/videos/play/wwdc2012/706/)
 
 
 ## Internationalization
