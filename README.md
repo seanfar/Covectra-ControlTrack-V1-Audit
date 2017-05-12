@@ -3,7 +3,7 @@
 [This repository](https://github.com/bignerdranch/tech-audit-starting-point)
 contains:
 
-- An intro to doing code audits at BNR, including what they are and the various
+- An [intro to doing code audits at BNR](intro.md), including what they are and the various
   reasons we do them
 - A template and toolchain for producing a polished audit document as your
   final deliverable without giving up the ability to meaningfully version
