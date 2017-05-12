@@ -5,6 +5,9 @@ contains:
 
 - An [intro to doing code audits at BNR](intro.md), including what they are and the various
   reasons we do them
+- [Resources](common-resources.md) relevant to common problems we encounter in audits.
+  If someone's Doing It Wrong, these blog posts can probably explain why
+  and what it looks like to Do It Right.
 - A template and toolchain for producing a polished audit document as your
   final deliverable without giving up the ability to meaningfully version
   control the work in progress
