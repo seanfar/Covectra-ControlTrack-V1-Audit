@@ -16,6 +16,10 @@ This [content started on NerdNet](https://sites.google.com/a/bignerdranch.com/ne
 When it became clear we have a reusable toolchain and template,
 the content moved to this repo.
 
+The old page continues to host links to several past audits
+of various styles; much that we learned through performing those audits
+is baked into the current guidelines and template.
+
 
 ## Getting Started
 
