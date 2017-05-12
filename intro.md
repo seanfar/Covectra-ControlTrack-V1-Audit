@@ -1,4 +1,4 @@
-# Tech Audits: The 5 Whys
+# What Is, Why, and How to Tech Audit
 ## What is a tech/code audit?
 A code audit is an organized summary of the state of a codebase.
 A tech audit broadens this from just code to other details.
