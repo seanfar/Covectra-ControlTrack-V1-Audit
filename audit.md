@@ -69,6 +69,36 @@ as of February 2017.
 This capsule history is provided so you have an idea of who to bug on Slack
 with questions.
 
+There's a strategy of easing machine processing that goes into where the
+linebreaks end up.
+You want to ensure the recommendation and the associated complexity
+end up on lines of their own, so they're easy to pick out.
+That turns this into a "semi-structured" document, and we can exploit that
+to dump a starting point CSV for estimating the changes like so:
+
+```
+read -d '' BUILD_CSV_AWK <<'EOT'
+/^#.*/{
+  section = $2
+}
+
+/recommend/{
+  a = index($0, "{");
+  b = index($0, "}");
+  recommendation = substr($0, a+1, b-a-1);
+}
+
+/Complexity:/{
+  complexity = $2;
+  printf "%s,%s,%s\\n", section, recommendation, complexity
+}
+EOT
+echo "Section,Recommendation,Complexity" >recommendations.csv
+egrep '^(#|1\.| *\*Complexity:\*)' audit.md \
+  | awk "$BUILD_CSV_AWK" \
+  >> recommendations.csv
+```
+
 Just copy-paste this recommendation syntax, and you'll be fine:
 
 1. **\recommend{Do this thing}:**
