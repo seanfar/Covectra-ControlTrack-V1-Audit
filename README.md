@@ -22,7 +22,7 @@ is baked into the current guidelines and template.
 
 
 ## Getting Started
-
+### Stand Up Your Audit Repo
 - **Create a new repo under the `bignerdranch` organization for your audit.**
   Say you're auditing version 3 of an iOS app named "I'm So Appy" for BigCorp.
   Then you might fork the repo to `bignerdranch/audit-ios-bigcorp-im-so-appy-v3`.
@@ -38,15 +38,45 @@ is baked into the current guidelines and template.
   git push -u origin
   ```
 
-- **Ensure you have the toolchain prereqs installed.**
-  We use Pandoc to handle the Markdown (with interspersed LaTeX)
-  and XeLaTeX to generate the final PDFs. If you don't have either, relax:
-  Just run XXX to install them, and you'll be on your way in no time!
+### Install Dependencies
+You only need to do this one time for your user account on a given machine.
 
-  Not sure if you have everything installed?
-  Skip to the next step, and if it all works, you're golden!
+We use Pandoc to handle the Markdown (with interspersed LaTeX)
+and XeLaTeX to generate the final PDFs. If you don't have either, relax:
 
-- **Run the toolchain on the blank template document.**
+- **Install a TeX System:**
+  You have two choices,
+  the 2-gig [MacTeX][] or the spartan 110 MB [BasicTeX][].
+- **Notify Your Shell:**
+  Start a new shell, or stick `/Library/TeX/texbin` on your `PATH`.
+- **BasicTeX: Add missing packages:**
+  If you went with BasicTeX, you'll need a few more packages:
+
+  ```
+  sudo tlmgr update --self
+  sudo tlmgr install wallpaper sectsty
+  ```
+- **Install Pandoc:**
+  `brew install pandoc` if you don't already have it.
+- **Run the toolchain on the blank template document:**
+
+  ```
+  make
+  ```
+
   This is a smoke test.
   All good? All good!
   Not all good? File an issue and then ask for help on Slack!
+
+  [BasicTeX]: https://www.tug.org/mactex/morepackages.html
+  [MacTeX]: https://www.tug.org/mactex/
+
+
+### Regular Usage
+- **`make`:**
+  Run `make` to build `audit.pdf` from `audit.md`.
+
+You'll probably need to close and re-open the PDF in Preview to see your
+changes.
+You can do `make && open audit.pdf`, but you'll still have to close the file
+manually, I think, for Preview to notice the changes.
