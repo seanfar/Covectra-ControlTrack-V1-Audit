@@ -16,7 +16,7 @@ multiple audits.
 
 
 ## Core Data
-- [Why "one context per thread" is a bug-filled antipattern](http://saulmora.com/2013/09/15/why-contextforcurrentthread-doesn-t-work-in-magicalrecord/)
+- [Why "one context per thread" is a bug-filled antipattern](http://saulmora.com/coredata/magicalrecord/2013/09/15/why-contextforcurrentthread-doesn-t-work-in-magicalrecord.html)
 - [Why and how to connect your PSC to a PS on a background thread](http://martiancraft.com/blog/2015/03/core-data-stack/)
 
 
