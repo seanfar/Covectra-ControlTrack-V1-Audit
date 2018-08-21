@@ -54,7 +54,7 @@ and XeLaTeX to generate the final PDFs. If you don't have either, relax:
 
   ```
   sudo tlmgr update --self
-  sudo tlmgr install wallpaper sectsty
+  sudo tlmgr install wallpaper sectsty lm-math
   ```
 - **Install Pandoc:**
   `brew install pandoc` if you don't already have it.
