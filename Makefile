@@ -1,7 +1,7 @@
 # vi: set noet:
 audit.pdf: audit.md
 	pandoc --standalone \
-		--latex-engine=xelatex \
+		--pdf-engine=xelatex \
 		--variable urlcolor=Coral \
 		--variable linkcolor=Coral \
 		--number-sections \
