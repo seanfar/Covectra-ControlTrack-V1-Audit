@@ -23,7 +23,7 @@ multiple audits.
 ## Code Style
 - [Organize your codebase by domain, not by useless MVC structure](http://www.sicpers.info/2014/03/inside-out-apps/)
 - [Further info on why organizing by MVC (or similar non-domain system) is unhelpful](http://www.sicpers.info/2014/10/the-trouble-with-layers/)
-- Robert "Uncle Bob" Martin expands on this point by emphasizing the primacy of an architecture created around use cases rather than frameworks in [Screaming Architecture](http://blog.8thlight.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
+   - Robert "Uncle Bob" Martin expands on this point by emphasizing the primacy of an architecture created around use cases rather than frameworks in [Screaming Architecture](http://blog.8thlight.com/uncle-bob/2011/09/30/Screaming-Architecture.html)
 - [Beware Massive View Controller](http://www.objc.io/issues/13-architecture/)
 - [Naming guidelines for Obj-C](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html#//apple_ref/doc/uid/10000146-SW1)
     - Watch out especially for `getFoo` methods that are just accessors.
