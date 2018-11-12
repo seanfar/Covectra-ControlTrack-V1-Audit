@@ -23,7 +23,7 @@ header-includes:
     - \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Futura}
     - \setmonofont[Scale=MatchLowercase]{Menlo}
     - \setcounter{secnumdepth}{3}
-    - \providecommand{\recommend}[1]{\addcontentsline{toc}{paragraph}{#1}#1}
+    - \providecommand{\recommend}[1]{\addcontentsline{toc}{paragraph}{#1}\textbf{#1:}}
 ---
 
 \newpage
@@ -101,7 +101,7 @@ egrep '^(#|1\.| *\*Complexity:\*)' audit.md \
 
 Just copy-paste this recommendation syntax, and you'll be fine:
 
-1. **\recommend{Do this thing}:**
+1. \recommend{Do this thing}
     Notice:
 
     - Newline at end of bolded section to facilitate munging your document
@@ -125,7 +125,7 @@ Just copy-paste this recommendation syntax, and you'll be fine:
 
     *Complexity:* Medium.
 
-1. **\recommend{Use the imperative}:**
+1. \recommend{Use the imperative}
     Recommendations should say, "Do something!"
 
     I'm also writing this so you can see what multiple entries in a section
