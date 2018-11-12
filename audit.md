@@ -210,7 +210,7 @@ see [Appendix A: Tables of Third-Party Components](#appendix-a)
 
 2. XXX: Discuss whether and how they’re satisfying the license requirements. Verify that the variety of licenses they're probably using are compatible with each other and with App Store distribution.
 
-1. **Consolidate component management using CocoaPods:**
+1. \recommend{Consolidate component management using CocoaPods}
     It is recommended to use a single approach to managing third-party
     components for simplicity of management. Most components are added via
     CocoaPods, thus it's recommended to consolidate component management using
@@ -221,7 +221,7 @@ see [Appendix A: Tables of Third-Party Components](#appendix-a)
 
     This should be relatively straightforward, but dependency
     management can be a bit of a pain. Vendoring helps a lot here.
-1. **Continue vendoring dependencies:**
+1. \recommend{Continue vendoring dependencies}
     The project is already vendoring its dependencies, that is, bundling all
     vendor-provided components with the app source code.
     The component manager is only needed when altering the components used, not
@@ -232,7 +232,7 @@ see [Appendix A: Tables of Third-Party Components](#appendix-a)
     `git clone` is all that is needed to build the project.
 
     *Complexity:* None.
-1. **Don't fight CocoaPods when modifying your dependencies:**
+1. \recommend{Don't fight CocoaPods when modifying your dependencies}
     The project has been relying on manually patching files resolved by the
     dependency manager for SwiftyJSON in order to work around a
     [memory leak issue](https://github.com/SwiftyJSON/SwiftyJSON/issues/323).
