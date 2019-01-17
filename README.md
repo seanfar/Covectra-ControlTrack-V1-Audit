@@ -58,7 +58,7 @@ and XeLaTeX to generate the final PDFs. If you don't have either, relax:
   ```
 - **Install Pandoc:**
   `brew install pandoc` if you don't already have it.
-- **Run the toolchain on the blank template document:**
+- **Run the toolchain on the blank template document (audit.md) by switching to the containing directory and typing:**
 
   ```
   make
