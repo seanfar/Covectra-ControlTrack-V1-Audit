@@ -50,7 +50,7 @@ This can sometimes be hard. It might require cooperation with the client to get 
 
 Document what you needed to do to get it working. You'll pull these into your audit document, and the client will hopefully fix the issues or add the steps to a readme for new developers.
 
-Leverage the compiler to populate your audit:
+Leverage the compiler and other tools to populate your audit:
 
 - Copy out the build warnings and errors.
   - Reporting the sheer number of them can dramatize the poor state of a project, or clarify how clean a project is.
@@ -70,6 +70,15 @@ Leverage the compiler to populate your audit:
       edited) or coupled files (often changed together by a commit).
     - clang static analyzer: Can find logic errors in an Obj/C/++ project.
         - Run this via Xcode, most likely.
+    - linter: Some of these are liable to report mostly style violations,
+      rather than juicy goodness, but even those can still help you populate
+      that section and can hint at the familiarity of the team with best
+      practices. Examples:
+        - [SwiftLint](https://github.com/realm/SwiftLint)
+        - [RxLint](https://bitbucket.org/littlerobots/rxlint/)
+        - [ktlint](https://ktlint.github.io/)
+        - [ErrorProne for Java](https://errorprone.info/)
+        - [FauxPas for Obj-C](http://fauxpasapp.com/) (see 1Password for license)
 - Flip on ALL the compiler warnings (`-Wall` and `-Wextra`) and see if there
   are serious errors lurking.
 
