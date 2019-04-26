@@ -289,12 +289,12 @@ Table: Third-Party Components Not Managed by CocoaPods
 | KAStatusBar           | Unknown    | 0.1        | Apache 2   | mFind/Library/KAStatusBar/           |
 | SWRevealTableViewCell | 0.3.5      | 0.3.5      | MIT        | mFind/Library/SWRevealTableViewCell/ |
 
-   Where available via CocoaPods, it is recommended to move to integrating the
-   dependency via CocoaPods. In this case, all of these are available as
+   Where available via CocoaPods, it is recommended to move to integrating
+   dependencies via CocoaPods. In this case, all of these are available as
    CocoaPods.
 
    Using CocoaPods would also ensure that information about the version used
-   is retain. Because the files themselves lack that info for KAStatusBar,
+   is retained. Because the files themselves lack that info for KAStatusBar,
    and no other effort appears to have been made to track the
    version integrated, it is not straightforward to locate the version
    of those dependencie that was originally pulled into the project.
