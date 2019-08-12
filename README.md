@@ -23,9 +23,9 @@ is baked into the current guidelines and template.
 
 ## Getting Started
 ### Stand Up Your Audit Repo
-- **Create a new repo under the `bignerdranch` organization for your audit.**
+- **Create a new private repo under the `bignerdranch` organization for your audit.**
   Say you're auditing version 3 of an iOS app named "I'm So Appy" for BigCorp.
-  Then you might fork the repo to `bignerdranch/audit-ios-bigcorp-im-so-appy-v3`.
+  Then you might fork the repo to `bignerdranch/BigCorp-Im-So-Appy-v3-Audit`.
 
 - **Clone this repo, then aim the `origin` remote at your audit's repo.**
   This'll look something like:
