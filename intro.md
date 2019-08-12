@@ -70,6 +70,8 @@ Leverage the compiler and other tools to populate your audit:
       edited) or coupled files (often changed together by a commit).
     - clang static analyzer: Can find logic errors in an Obj/C/++ project.
         - Run this via Xcode, most likely.
+    - code complexity analyzer:
+        - [Flog for Ruby](http://ruby.sadi.st/Flog.html) (content warning on the homepage!)
     - linter: Some of these are liable to report mostly style violations,
       rather than juicy goodness, but even those can still help you populate
       that section and can hint at the familiarity of the team with best
@@ -79,6 +81,13 @@ Leverage the compiler and other tools to populate your audit:
         - [ktlint](https://ktlint.github.io/)
         - [ErrorProne for Java](https://errorprone.info/)
         - [FauxPas for Obj-C](http://fauxpasapp.com/) (see 1Password for license)
+        - [ESLint for JavaScript](https://eslint.org/)
+        - [Rubocop for Ruby](https://rubocop.readthedocs.io/)
+    - code coverage: Reports which lines (and percentage) are covered by
+      automated tests. A high score doesn't mean they're *good* tests, but
+      a low score means there is *untested* code.
+        - [Istanbul for JavaScript](https://istanbul.js.org/)
+        - [SimpleCov for Ruby](https://github.com/colszowka/simplecov)
 - Flip on ALL the compiler warnings (`-Wall` and `-Wextra`) and see if there
   are serious errors lurking.
 
@@ -123,6 +132,7 @@ This "getting to know you" phase is a good time to survey their use of third-par
 - Are there any unused components?
 - Are there any obsolete components?
     - If so, are there substantive changes (security patches or bad bugs) that should motivate adoption ASAP, or are they OK to linger on their current version?
+      - [bundler-audit for Ruby](https://github.com/rubysec/bundler-audit)
 
 
 #### Start filling out your final audit document template!
