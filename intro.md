@@ -95,7 +95,7 @@ Leverage the compiler and other tools to populate your audit:
 ### Surfing Around
 This is where you get a general feel for the project.
 
-#### Mine any version control history 
+#### Mine any version control history
 
 - Do you see recurring problems, i.e., "Fixed this thing" 10 times for the same thing ("fixed" it, yup)?
 - How many people have worked on the project (`git shortlog -ns`, maybe with a .mailmap file)?
