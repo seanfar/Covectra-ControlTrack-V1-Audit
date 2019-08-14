@@ -82,7 +82,8 @@ Leverage the compiler and other tools to populate your audit:
         - [ErrorProne for Java](https://errorprone.info/)
         - [FauxPas for Obj-C](http://fauxpasapp.com/) (see 1Password for license)
         - [ESLint for JavaScript](https://eslint.org/)
-        - [Rubocop for Ruby](https://rubocop.readthedocs.io/)
+        - [Rubocop for Ruby](https://rubocop.readthedocs.io/) - general linter including security and code complexity checks
+        - [Brakeman for Ruby](https://brakemanscanner.org/) - vulnerability scanner
     - code coverage: Reports which lines (and percentage) are covered by
       automated tests. A high score doesn't mean they're *good* tests, but
       a low score means there is *untested* code.
